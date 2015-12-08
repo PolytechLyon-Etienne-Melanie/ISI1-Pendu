@@ -22,10 +22,7 @@ namespace ISIPendu
             initComposants();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
