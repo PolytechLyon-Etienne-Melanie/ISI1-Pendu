@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Letter.cs" />
+    <Compile Include="MysteryWord.cs" />
     <Compile Include="Pendu.cs">
       <SubType>Form</SubType>
     </Compile>

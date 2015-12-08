@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pendu));
             this.labelTitle = new System.Windows.Forms.Label();
             this.groupBox_letters = new System.Windows.Forms.GroupBox();
-            this.dgv_letters = new System.Windows.Forms.DataGridView();
             this.groupBox_menu = new System.Windows.Forms.GroupBox();
             this.button_quit = new System.Windows.Forms.Button();
             this.button_surrend = new System.Windows.Forms.Button();
@@ -40,8 +39,8 @@
             this.dgv_alphabet = new System.Windows.Forms.DataGridView();
             this.tsplb_information = new System.Windows.Forms.Label();
             this.label_letters = new System.Windows.Forms.Label();
+            this.label_used_letters = new System.Windows.Forms.Label();
             this.groupBox_letters.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_letters)).BeginInit();
             this.groupBox_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).BeginInit();
             this.SuspendLayout();
@@ -53,20 +52,10 @@
             // 
             // groupBox_letters
             // 
-            this.groupBox_letters.Controls.Add(this.dgv_letters);
+            this.groupBox_letters.Controls.Add(this.label_used_letters);
             resources.ApplyResources(this.groupBox_letters, "groupBox_letters");
             this.groupBox_letters.Name = "groupBox_letters";
             this.groupBox_letters.TabStop = false;
-            // 
-            // dgv_letters
-            // 
-            this.dgv_letters.AllowUserToAddRows = false;
-            this.dgv_letters.AllowUserToDeleteRows = false;
-            this.dgv_letters.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgv_letters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_letters, "dgv_letters");
-            this.dgv_letters.Name = "dgv_letters";
-            this.dgv_letters.ReadOnly = true;
             // 
             // groupBox_menu
             // 
@@ -130,6 +119,12 @@
             resources.ApplyResources(this.label_letters, "label_letters");
             this.label_letters.Name = "label_letters";
             // 
+            // label_used_letters
+            // 
+            resources.ApplyResources(this.label_used_letters, "label_used_letters");
+            this.label_used_letters.Name = "label_used_letters";
+            this.label_used_letters.UseMnemonic = false;
+            // 
             // Pendu
             // 
             resources.ApplyResources(this, "$this");
@@ -142,7 +137,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Pendu";
             this.groupBox_letters.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_letters)).EndInit();
             this.groupBox_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).EndInit();
             this.ResumeLayout(false);
@@ -160,12 +154,12 @@
         private System.Windows.Forms.GroupBox groupBox_menu;
         private System.Windows.Forms.DataGridView dgv_alphabet;
         private System.Windows.Forms.Label tsplb_information;
-        private System.Windows.Forms.DataGridView dgv_letters;
         private System.Windows.Forms.Button button_quit;
         private System.Windows.Forms.Button button_surrend;
         private System.Windows.Forms.Button button_generate;
         private System.Windows.Forms.Button button_word;
         private System.Windows.Forms.Label label_letters;
+        private System.Windows.Forms.Label label_used_letters;
     }
 }
 

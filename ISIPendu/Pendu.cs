@@ -18,15 +18,22 @@ namespace ISIPendu
         private List<String> used_letters = new List<String>();
         private List<String> discovered_letters = new List<String>();
         private String Mot_secret;
+        private MysteryWord mysteryWord;
 
         public Pendu()
         {
             InitializeComponent();
             initComposants();
             selectionnerFichier();
+            initMot();
         }
 
-        
+        private void initMot()
+        {
+            mysteryWord = new MysteryWord(Mot_secret);
+            this.label_letters.Text = mysteryWord.getMysteryWord();
+            MessageBox.Show(mysteryWord.getMysteryWord());
+        }
 
         private void selectionnerFichier()
          {
