@@ -15,11 +15,15 @@ namespace ISIPendu
     {
         // déclaration et instanciation d’une collection pour le dictionnaire
         private List<String> dictionnaire = new List<String>();
+        private List<String> used_letters = new List<String>();
+        private List<String> discovered_letters = new List<String>();
+        private String Mot_secret;
 
         public Pendu()
         {
             InitializeComponent();
             initComposants();
+            selectionnerFichier();
         }
 
         
@@ -41,11 +45,17 @@ namespace ISIPendu
                 // Renseignement de la propriété Mot_secret d'un mot tiré au hasard dans le dictionnaire
                 fs.Close();
                 sr.Close();
-                //Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
-                //tsplb_information.Text = "Mot secret chargé, choisissez votre première lettre.";
+                Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
+                tsplb_information.Text = "Mot secret chargé, choisissez votre première lettre.";
                 //rafraichirSecret();
-                //bt_verifier.Enabled = true;
+                this.button_word.Enabled = true;
+                MessageBox.Show(Mot_secret);
             }
+        }
+
+        private void rafraichirSecret()
+        {
+            
         }
 
         // Initialise les composants graphiques du formulaire
@@ -74,6 +84,12 @@ namespace ISIPendu
         {
             String l = (String)this.dgv_alphabet.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
             MessageBox.Show(l);
+        }
+
+        private void click_letter(String l)
+        {
+            used_letters.Add(l);
+
         }
 
     }
