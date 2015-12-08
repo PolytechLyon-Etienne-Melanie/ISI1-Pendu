@@ -18,12 +18,18 @@ namespace ISIPendu
         private List<String> used_letters = new List<String>();
         private String Mot_secret;
         private MysteryWord mysteryWord;
+        private bool onGame;
+
+        static int nbTry = 10;
+        private int currentTry;
 
         public Pendu()
         {
             InitializeComponent();
             initComposants();
             selectionnerFichier();
+            onGame = true;
+            currentTry = 0;
             initMot();
         }
 
@@ -58,11 +64,6 @@ namespace ISIPendu
             }
         }
 
-        private void rafraichirSecret()
-        {
-            
-        }
-
         // Initialise les composants graphiques du formulaire
         private void initComposants()
         {
@@ -93,6 +94,9 @@ namespace ISIPendu
 
         private void click_letter(char c, int row, int col)
         {
+            if (!onGame)
+                return;
+
             updateUsedLetters(c);
             if(mysteryWord.checkLetter(c))
             {
@@ -103,8 +107,6 @@ namespace ISIPendu
             {
                 wrongLetter(row, col);
             }
-
-            addOneTry();
         }
 
         private void updateWord()
@@ -126,16 +128,64 @@ namespace ISIPendu
         private void rightLetter(int r, int c)
         {
             this.dgv_alphabet.Rows[r].Cells[c].Style.BackColor = Color.Green;
+            if (mysteryWord.discovered())
+                onWin();
         }
 
         private void wrongLetter(int r, int c)
         {
             this.dgv_alphabet.Rows[r].Cells[c].Style.BackColor = Color.Red;
+            addOneTry();
         }
 
         private void addOneTry()
         {
+            currentTry++;
+            if (currentTry == nbTry)
+                onLoose();
+        }
 
+        private void onWin()
+        {
+            onGame = false;
+            MessageBox.Show("Félicitaion vous avez gagné !");
+            this.button_generate.Enabled = true;
+            this.button_surrend.Enabled = false;
+        }
+
+        private void onLoose()
+        {
+            onGame = false;
+            MessageBox.Show("Dommage, c'est perdu.");
+            this.button_generate.Enabled = true;
+            this.button_surrend.Enabled = false;
+        }
+
+        private void reinit()
+        {
+            InitializeComponent();
+            initComposants();
+            selectionnerFichier();
+            onGame = true;
+            currentTry = 0;
+            initMot();
+        }
+
+        private void button_quit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Voulez-vous vraiment quitter ?", "Quitter", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                this.Activate();
+            }   
+        }
+
+        private void button_generate_Click(object sender, EventArgs e)
+        {
+            reinit();
         }
     }
 }

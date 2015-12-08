@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pendu));
             this.labelTitle = new System.Windows.Forms.Label();
             this.groupBox_letters = new System.Windows.Forms.GroupBox();
+            this.label_used_letters = new System.Windows.Forms.Label();
             this.groupBox_menu = new System.Windows.Forms.GroupBox();
             this.button_quit = new System.Windows.Forms.Button();
             this.button_surrend = new System.Windows.Forms.Button();
@@ -39,10 +40,11 @@
             this.dgv_alphabet = new System.Windows.Forms.DataGridView();
             this.tsplb_information = new System.Windows.Forms.Label();
             this.label_letters = new System.Windows.Forms.Label();
-            this.label_used_letters = new System.Windows.Forms.Label();
+            this.picture_Pendu = new System.Windows.Forms.PictureBox();
             this.groupBox_letters.SuspendLayout();
             this.groupBox_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_Pendu)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -56,6 +58,12 @@
             resources.ApplyResources(this.groupBox_letters, "groupBox_letters");
             this.groupBox_letters.Name = "groupBox_letters";
             this.groupBox_letters.TabStop = false;
+            // 
+            // label_used_letters
+            // 
+            resources.ApplyResources(this.label_used_letters, "label_used_letters");
+            this.label_used_letters.Name = "label_used_letters";
+            this.label_used_letters.UseMnemonic = false;
             // 
             // groupBox_menu
             // 
@@ -72,6 +80,7 @@
             resources.ApplyResources(this.button_quit, "button_quit");
             this.button_quit.Name = "button_quit";
             this.button_quit.UseVisualStyleBackColor = true;
+            this.button_quit.Click += new System.EventHandler(this.button_quit_Click);
             // 
             // button_surrend
             // 
@@ -84,6 +93,7 @@
             resources.ApplyResources(this.button_generate, "button_generate");
             this.button_generate.Name = "button_generate";
             this.button_generate.UseVisualStyleBackColor = true;
+            this.button_generate.Click += new System.EventHandler(this.button_generate_Click);
             // 
             // button_word
             // 
@@ -118,15 +128,16 @@
             resources.ApplyResources(this.label_letters, "label_letters");
             this.label_letters.Name = "label_letters";
             // 
-            // label_used_letters
+            // picture_Pendu
             // 
-            resources.ApplyResources(this.label_used_letters, "label_used_letters");
-            this.label_used_letters.Name = "label_used_letters";
-            this.label_used_letters.UseMnemonic = false;
+            resources.ApplyResources(this.picture_Pendu, "picture_Pendu");
+            this.picture_Pendu.Name = "picture_Pendu";
+            this.picture_Pendu.TabStop = false;
             // 
             // Pendu
             // 
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.picture_Pendu);
             this.Controls.Add(this.label_letters);
             this.Controls.Add(this.tsplb_information);
             this.Controls.Add(this.dgv_alphabet);
@@ -138,6 +149,7 @@
             this.groupBox_letters.ResumeLayout(false);
             this.groupBox_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_Pendu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,6 +171,7 @@
         private System.Windows.Forms.Button button_word;
         private System.Windows.Forms.Label label_letters;
         private System.Windows.Forms.Label label_used_letters;
+        private System.Windows.Forms.PictureBox picture_Pendu;
     }
 }
 

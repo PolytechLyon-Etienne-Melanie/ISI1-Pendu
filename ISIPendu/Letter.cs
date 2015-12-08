@@ -60,5 +60,10 @@ namespace ISIPendu
                 return "_";
             }
         }
+
+        public bool isDiscovered()
+        {
+            return discovered;
+        }
     }
 }

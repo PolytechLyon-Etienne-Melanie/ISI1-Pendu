@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;label_used_letters.Name" xml:space="preserve">
     <value>label_used_letters</value>
@@ -183,79 +183,44 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox_letters.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;button_quit.Name" xml:space="preserve">
-    <value>button_quit</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_used_letters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;button_quit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_used_letters.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
   </data>
-  <data name="&gt;&gt;button_quit.Parent" xml:space="preserve">
-    <value>groupBox_menu</value>
+  <data name="label_used_letters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;button_quit.ZOrder" xml:space="preserve">
+  <data name="label_used_letters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="label_used_letters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="label_used_letters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 95</value>
+  </data>
+  <data name="label_used_letters.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button_surrend.Name" xml:space="preserve">
-    <value>button_surrend</value>
+  <data name="label_used_letters.Text" xml:space="preserve">
+    <value>lettres</value>
   </data>
-  <data name="&gt;&gt;button_surrend.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_used_letters.Name" xml:space="preserve">
+    <value>label_used_letters</value>
   </data>
-  <data name="&gt;&gt;button_surrend.Parent" xml:space="preserve">
-    <value>groupBox_menu</value>
+  <data name="&gt;&gt;label_used_letters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_surrend.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;label_used_letters.Parent" xml:space="preserve">
+    <value>groupBox_letters</value>
   </data>
-  <data name="&gt;&gt;button_generate.Name" xml:space="preserve">
-    <value>button_generate</value>
-  </data>
-  <data name="&gt;&gt;button_generate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_generate.Parent" xml:space="preserve">
-    <value>groupBox_menu</value>
-  </data>
-  <data name="&gt;&gt;button_generate.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button_word.Name" xml:space="preserve">
-    <value>button_word</value>
-  </data>
-  <data name="&gt;&gt;button_word.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_word.Parent" xml:space="preserve">
-    <value>groupBox_menu</value>
-  </data>
-  <data name="&gt;&gt;button_word.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 379</value>
-  </data>
-  <data name="groupBox_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 137</value>
-  </data>
-  <data name="groupBox_menu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox_menu.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Name" xml:space="preserve">
-    <value>groupBox_menu</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;label_used_letters.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button_quit.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 107</value>
@@ -305,6 +270,9 @@
   <data name="&gt;&gt;button_surrend.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="button_generate.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="button_generate.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 49</value>
   </data>
@@ -353,10 +321,33 @@
   <data name="&gt;&gt;button_word.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBox_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 379</value>
+  </data>
+  <data name="groupBox_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 137</value>
+  </data>
+  <data name="groupBox_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox_menu.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Name" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="dgv_alphabet.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 58</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgv_alphabet.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -376,7 +367,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgv_alphabet.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tsplb_information.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 159</value>
@@ -403,7 +394,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tsplb_information.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label_letters.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 30pt</value>
@@ -433,42 +424,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label_letters.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="label_used_letters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="picture_Pendu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 259</value>
   </data>
-  <data name="label_used_letters.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
+  <data name="picture_Pendu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 257</value>
   </data>
-  <data name="label_used_letters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="picture_Pendu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="label_used_letters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
+  <data name="&gt;&gt;picture_Pendu.Name" xml:space="preserve">
+    <value>picture_Pendu</value>
   </data>
-  <data name="label_used_letters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="&gt;&gt;picture_Pendu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label_used_letters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 95</value>
+  <data name="&gt;&gt;picture_Pendu.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="label_used_letters.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label_used_letters.Text" xml:space="preserve">
-    <value>lettres</value>
-  </data>
-  <data name="&gt;&gt;label_used_letters.Name" xml:space="preserve">
-    <value>label_used_letters</value>
-  </data>
-  <data name="&gt;&gt;label_used_letters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_used_letters.Parent" xml:space="preserve">
-    <value>groupBox_letters</value>
-  </data>
-  <data name="&gt;&gt;label_used_letters.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;picture_Pendu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -48,5 +48,15 @@ namespace ISIPendu
             }
             return w;
         }
+
+        public bool discovered()
+        {
+            foreach (Letter letter in word)
+            {
+                if (!letter.isDiscovered())
+                    return false;
+            }
+            return true;
+        }
     }
 }
