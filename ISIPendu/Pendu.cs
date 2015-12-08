@@ -22,13 +22,6 @@ namespace ISIPendu
             initComposants();
         }
 
-     
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         
 
         private void selectionnerFichier()
@@ -75,6 +68,12 @@ namespace ISIPendu
                 dgv_alphabet.Rows[1].Cells[i].Value = ((Char)(i + (65 + 13))).ToString();
             }
             tsplb_information.Text = "Veuillez charger un fichier de dictionnaire de mots.";
+        }
+
+        private void dgv_alphabet_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String l = (String)this.dgv_alphabet.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+            MessageBox.Show(l);
         }
 
     }
