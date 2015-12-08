@@ -16,7 +16,6 @@ namespace ISIPendu
         // déclaration et instanciation d’une collection pour le dictionnaire
         private List<String> dictionnaire = new List<String>();
         private List<String> used_letters = new List<String>();
-        private List<String> discovered_letters = new List<String>();
         private String Mot_secret;
         private MysteryWord mysteryWord;
 
@@ -31,8 +30,8 @@ namespace ISIPendu
         private void initMot()
         {
             mysteryWord = new MysteryWord(Mot_secret);
-            this.label_letters.Text = mysteryWord.getMysteryWord();
-            MessageBox.Show(mysteryWord.getMysteryWord());
+            updateWord();
+            this.label_used_letters.Text = "";
         }
 
         private void selectionnerFichier()
@@ -56,7 +55,6 @@ namespace ISIPendu
                 tsplb_information.Text = "Mot secret chargé, choisissez votre première lettre.";
                 //rafraichirSecret();
                 this.button_word.Enabled = true;
-                MessageBox.Show(Mot_secret);
             }
         }
 
@@ -90,14 +88,54 @@ namespace ISIPendu
         private void dgv_alphabet_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             String l = (String)this.dgv_alphabet.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-            MessageBox.Show(l);
+            click_letter(l[0], e.RowIndex, e.ColumnIndex);
         }
 
-        private void click_letter(String l)
+        private void click_letter(char c, int row, int col)
         {
-            used_letters.Add(l);
+            updateUsedLetters(c);
+            if(mysteryWord.checkLetter(c))
+            {
+                updateWord();
+                rightLetter(row, col);
+            }
+            else
+            {
+                wrongLetter(row, col);
+            }
 
+            addOneTry();
         }
 
+        private void updateWord()
+        {
+            this.label_letters.Text = mysteryWord.getMysteryWord();
+        }
+
+        private void updateUsedLetters(char c)
+        {
+            this.used_letters.Add(c.ToString());
+            String w = "";
+            foreach(String l in used_letters)
+            {
+                w += l + ", ";
+            }
+            this.label_used_letters.Text = w;
+        }
+
+        private void rightLetter(int r, int c)
+        {
+            this.dgv_alphabet.Rows[r].Cells[c].Style.BackColor = Color.Green;
+        }
+
+        private void wrongLetter(int r, int c)
+        {
+            this.dgv_alphabet.Rows[r].Cells[c].Style.BackColor = Color.Red;
+        }
+
+        private void addOneTry()
+        {
+
+        }
     }
 }

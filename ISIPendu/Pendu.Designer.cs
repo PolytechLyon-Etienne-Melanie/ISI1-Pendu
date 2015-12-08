@@ -105,7 +105,6 @@
             resources.ApplyResources(this.dgv_alphabet, "dgv_alphabet");
             this.dgv_alphabet.MultiSelect = false;
             this.dgv_alphabet.Name = "dgv_alphabet";
-            this.dgv_alphabet.ReadOnly = true;
             this.dgv_alphabet.RowHeadersVisible = false;
             this.dgv_alphabet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_alphabet_CellClick);
             // 
