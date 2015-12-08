@@ -149,229 +149,169 @@
   <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 259</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 114</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Lettres essayées</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dgv_letters.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dgv_letters.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 87</value>
   </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="dgv_letters.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
+  <data name="&gt;&gt;dgv_letters.Name" xml:space="preserve">
+    <value>dgv_letters</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;dgv_letters.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;dgv_letters.Parent" xml:space="preserve">
+    <value>groupBox_letters</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dgv_letters.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="groupBox_letters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 259</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox_letters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 114</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="groupBox_letters.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="groupBox_letters.Text" xml:space="preserve">
+    <value>Lettres essayées</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox_letters.Name" xml:space="preserve">
+    <value>groupBox_letters</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button.Name" xml:space="preserve">
-    <value>button</value>
-  </data>
-  <data name="&gt;&gt;button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 379</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 137</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBox_letters.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox_letters.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;groupBox_letters.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_quit.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 107</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_quit.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 23</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_quit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="button_quit.Text" xml:space="preserve">
     <value>Quitter</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;button_quit.Name" xml:space="preserve">
+    <value>button_quit</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_quit.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;button_quit.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_quit.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_surrend.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 78</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_surrend.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 23</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_surrend.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="button_surrend.Text" xml:space="preserve">
     <value>Abandonner</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;button_surrend.Name" xml:space="preserve">
+    <value>button_surrend</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_surrend.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;button_surrend.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_surrend.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_generate.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 49</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_generate.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 23</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_generate.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="button_generate.Text" xml:space="preserve">
     <value>Générer un mot</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;button_generate.Name" xml:space="preserve">
+    <value>button_generate</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_generate.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;button_generate.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_generate.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_word.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 20</value>
   </data>
-  <data name="button.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_word.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 23</value>
   </data>
-  <data name="button.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_word.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button.Text" xml:space="preserve">
+  <data name="button_word.Text" xml:space="preserve">
     <value>Taper un mot</value>
   </data>
-  <data name="&gt;&gt;button.Name" xml:space="preserve">
-    <value>button</value>
+  <data name="&gt;&gt;button_word.Name" xml:space="preserve">
+    <value>button_word</value>
   </data>
-  <data name="&gt;&gt;button.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_word.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;button_word.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
   </data>
-  <data name="&gt;&gt;button.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_word.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 379</value>
+  </data>
+  <data name="groupBox_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 137</value>
+  </data>
+  <data name="groupBox_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox_menu.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Name" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="dgv_alphabet.Location" type="System.Drawing.Point, System.Drawing">
@@ -399,20 +339,17 @@
   <data name="&gt;&gt;dgv_alphabet.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tsplb_information.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="tsplb_information.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 159</value>
+    <value>12, 159</value>
   </data>
   <data name="tsplb_information.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>459, 20</value>
   </data>
   <data name="tsplb_information.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tsplb_information.Text" xml:space="preserve">
-    <value>label2</value>
+    <value>infos</value>
   </data>
   <data name="tsplb_information.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -429,25 +366,34 @@
   <data name="&gt;&gt;tsplb_information.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 187</value>
+  <data name="label_letters.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
   </data>
-  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 54</value>
+  <data name="label_letters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 190</value>
   </data>
-  <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_letters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 53</value>
+  </data>
+  <data name="label_letters.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.Name" xml:space="preserve">
-    <value>dataGridView2</value>
+  <data name="label_letters.Text" xml:space="preserve">
+    <value>_ _ _ _ _</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label_letters.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_letters.Name" xml:space="preserve">
+    <value>label_letters</value>
+  </data>
+  <data name="&gt;&gt;label_letters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_letters.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_letters.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

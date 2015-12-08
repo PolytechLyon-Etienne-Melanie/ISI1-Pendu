@@ -30,21 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pendu));
             this.labelTitle = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button = new System.Windows.Forms.Button();
+            this.groupBox_letters = new System.Windows.Forms.GroupBox();
+            this.dgv_letters = new System.Windows.Forms.DataGridView();
+            this.groupBox_menu = new System.Windows.Forms.GroupBox();
+            this.button_quit = new System.Windows.Forms.Button();
+            this.button_surrend = new System.Windows.Forms.Button();
+            this.button_generate = new System.Windows.Forms.Button();
+            this.button_word = new System.Windows.Forms.Button();
             this.dgv_alphabet = new System.Windows.Forms.DataGridView();
             this.tsplb_information = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.label_letters = new System.Windows.Forms.Label();
+            this.groupBox_letters.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_letters)).BeginInit();
+            this.groupBox_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -52,56 +51,56 @@
             resources.ApplyResources(this.labelTitle, "labelTitle");
             this.labelTitle.Name = "labelTitle";
             // 
-            // groupBox1
+            // groupBox_letters
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            this.groupBox_letters.Controls.Add(this.dgv_letters);
+            resources.ApplyResources(this.groupBox_letters, "groupBox_letters");
+            this.groupBox_letters.Name = "groupBox_letters";
+            this.groupBox_letters.TabStop = false;
             // 
-            // dataGridView1
+            // dgv_letters
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
+            this.dgv_letters.AllowUserToAddRows = false;
+            this.dgv_letters.AllowUserToDeleteRows = false;
+            this.dgv_letters.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgv_letters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgv_letters, "dgv_letters");
+            this.dgv_letters.Name = "dgv_letters";
+            this.dgv_letters.ReadOnly = true;
             // 
-            // groupBox2
+            // groupBox_menu
             // 
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            this.groupBox_menu.Controls.Add(this.button_quit);
+            this.groupBox_menu.Controls.Add(this.button_surrend);
+            this.groupBox_menu.Controls.Add(this.button_generate);
+            this.groupBox_menu.Controls.Add(this.button_word);
+            resources.ApplyResources(this.groupBox_menu, "groupBox_menu");
+            this.groupBox_menu.Name = "groupBox_menu";
+            this.groupBox_menu.TabStop = false;
             // 
-            // button4
+            // button_quit
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.button_quit, "button_quit");
+            this.button_quit.Name = "button_quit";
+            this.button_quit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_surrend
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.button_surrend, "button_surrend");
+            this.button_surrend.Name = "button_surrend";
+            this.button_surrend.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_generate
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.button_generate, "button_generate");
+            this.button_generate.Name = "button_generate";
+            this.button_generate.UseVisualStyleBackColor = true;
             // 
-            // button
+            // button_word
             // 
-            resources.ApplyResources(this.button, "button");
-            this.button.Name = "button";
-            this.button.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.button_word, "button_word");
+            this.button_word.Name = "button_word";
+            this.button_word.UseVisualStyleBackColor = true;
             // 
             // dgv_alphabet
             // 
@@ -125,33 +124,26 @@
             resources.ApplyResources(this.tsplb_information, "tsplb_information");
             this.tsplb_information.Name = "tsplb_information";
             // 
-            // dataGridView2
+            // label_letters
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            resources.ApplyResources(this.label_letters, "label_letters");
+            this.label_letters.Name = "label_letters";
             // 
             // Pendu
             // 
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label_letters);
             this.Controls.Add(this.tsplb_information);
             this.Controls.Add(this.dgv_alphabet);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_menu);
+            this.Controls.Add(this.groupBox_letters);
             this.Controls.Add(this.labelTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Pendu";
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            this.groupBox_letters.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_letters)).EndInit();
+            this.groupBox_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_alphabet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,16 +155,16 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox_letters;
+        private System.Windows.Forms.GroupBox groupBox_menu;
         private System.Windows.Forms.DataGridView dgv_alphabet;
         private System.Windows.Forms.Label tsplb_information;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.DataGridView dgv_letters;
+        private System.Windows.Forms.Button button_quit;
+        private System.Windows.Forms.Button button_surrend;
+        private System.Windows.Forms.Button button_generate;
+        private System.Windows.Forms.Button button_word;
+        private System.Windows.Forms.Label label_letters;
     }
 }
 
