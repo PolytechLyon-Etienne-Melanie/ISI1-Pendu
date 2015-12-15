@@ -222,6 +222,78 @@
   <data name="&gt;&gt;label_used_letters.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;button_quit.Name" xml:space="preserve">
+    <value>button_quit</value>
+  </data>
+  <data name="&gt;&gt;button_quit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_quit.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;button_quit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_surrend.Name" xml:space="preserve">
+    <value>button_surrend</value>
+  </data>
+  <data name="&gt;&gt;button_surrend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_surrend.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;button_surrend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_generate.Name" xml:space="preserve">
+    <value>button_generate</value>
+  </data>
+  <data name="&gt;&gt;button_generate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_generate.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;button_generate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_word.Name" xml:space="preserve">
+    <value>button_word</value>
+  </data>
+  <data name="&gt;&gt;button_word.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_word.Parent" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;button_word.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 379</value>
+  </data>
+  <data name="groupBox_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 137</value>
+  </data>
+  <data name="groupBox_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox_menu.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Name" xml:space="preserve">
+    <value>groupBox_menu</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_menu.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="button_quit.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 107</value>
   </data>
@@ -321,30 +393,6 @@
   <data name="&gt;&gt;button_word.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="groupBox_menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 379</value>
-  </data>
-  <data name="groupBox_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 137</value>
-  </data>
-  <data name="groupBox_menu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox_menu.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Name" xml:space="preserve">
-    <value>groupBox_menu</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox_menu.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="dgv_alphabet.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 58</value>
   </data>
@@ -431,6 +479,9 @@
   </data>
   <data name="picture_Pendu.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 257</value>
+  </data>
+  <data name="picture_Pendu.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="picture_Pendu.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>

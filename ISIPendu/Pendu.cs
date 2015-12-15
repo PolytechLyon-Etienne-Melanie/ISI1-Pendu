@@ -22,6 +22,7 @@ namespace ISIPendu
 
         static int nbTry = 10;
         private int currentTry;
+        private Image[] images;
 
         public Pendu()
         {
@@ -38,6 +39,16 @@ namespace ISIPendu
             mysteryWord = new MysteryWord(Mot_secret);
             updateWord();
             this.label_used_letters.Text = "";
+        }
+
+        private void loadImages()
+        {
+            int n = 11;
+            images = new Image[n];
+            for(int i = 0; i < n; i++)
+            {
+                images[i] = Image.FromFile("images/pendu_"+i+".png");
+            }
         }
 
         private void selectionnerFichier()
@@ -58,10 +69,18 @@ namespace ISIPendu
                 fs.Close();
                 sr.Close();
                 Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
-                tsplb_information.Text = "Mot secret chargé, choisissez votre première lettre.";
+                info("Mot secret chargé, choisissez votre première lettre.");
                 //rafraichirSecret();
                 this.button_word.Enabled = true;
             }
+        }
+
+        private void selectionnerMot()
+        {
+                Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
+                info("Mot secret chargé, choisissez votre première lettre.");
+                //rafraichirSecret();
+                this.button_word.Enabled = true;
         }
 
         // Initialise les composants graphiques du formulaire
@@ -83,7 +102,31 @@ namespace ISIPendu
                 dgv_alphabet.Rows[1].Cells[i].Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgv_alphabet.Rows[1].Cells[i].Value = ((Char)(i + (65 + 13))).ToString();
             }
-            tsplb_information.Text = "Veuillez charger un fichier de dictionnaire de mots.";
+            info("Veuillez charger un fichier de dictionnaire de mots.");
+            loadImages();
+            updateImage();
+        }
+
+        private void reinitComposants()
+        {
+            // Charge les cellules du DataGridView
+            dgv_alphabet.ColumnCount = 13;
+            dgv_alphabet.RowCount = 2;
+            dgv_alphabet.Rows[0].Height = 30;
+            dgv_alphabet.Rows[1].Height = 30;
+            for (int i = 0; i < 13; i++)
+            {
+                this.dgv_alphabet.Rows[0].Cells[i].Style.BackColor = Color.White;
+                this.dgv_alphabet.Rows[1].Cells[i].Style.BackColor = Color.White;
+            }
+            info("");
+            updateWord();
+            this.label_used_letters.Text = "";
+            used_letters = new List<String>();
+            this.button_generate.Enabled = false;
+            this.button_surrend.Enabled = true;
+            this.button_word.Enabled = true;
+            
         }
 
         private void dgv_alphabet_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -141,6 +184,7 @@ namespace ISIPendu
         private void addOneTry()
         {
             currentTry++;
+            updateImage();
             if (currentTry == nbTry)
                 onLoose();
         }
@@ -151,23 +195,26 @@ namespace ISIPendu
             MessageBox.Show("Félicitaion vous avez gagné !");
             this.button_generate.Enabled = true;
             this.button_surrend.Enabled = false;
+            this.button_word.Enabled = false;
         }
 
         private void onLoose()
         {
             onGame = false;
-            MessageBox.Show("Dommage, c'est perdu.");
+            MessageBox.Show("Dommage, c'est perdu. \nLe mot était "+Mot_secret+".");
             this.button_generate.Enabled = true;
             this.button_surrend.Enabled = false;
+            this.button_word.Enabled = false;
         }
 
         private void reinit()
         {
-            InitializeComponent();
-            initComposants();
-            selectionnerFichier();
+
+            reinitComposants();
+            selectionnerMot();
             onGame = true;
             currentTry = 0;
+            updateImage();
             initMot();
         }
 
@@ -187,5 +234,28 @@ namespace ISIPendu
         {
             reinit();
         }
+
+        private void button_surrend_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Vous avez perdu ! Le mot était "+Mot_secret+". \nVoulez-vous recommencer ?", "Abandon", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                reinit();
+            }   
+        }
+
+        private void info(string s)
+        {
+            tsplb_information.Text = s;
+        }
+
+        private void updateImage()
+        {
+            this.picture_Pendu.Image = images[currentTry];
+        }
+
     }
 }

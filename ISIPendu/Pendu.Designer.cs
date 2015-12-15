@@ -87,6 +87,7 @@
             resources.ApplyResources(this.button_surrend, "button_surrend");
             this.button_surrend.Name = "button_surrend";
             this.button_surrend.UseVisualStyleBackColor = true;
+            this.button_surrend.Click += new System.EventHandler(this.button_surrend_Click);
             // 
             // button_generate
             // 
