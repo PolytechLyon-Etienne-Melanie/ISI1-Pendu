@@ -105,6 +105,7 @@
             resources.ApplyResources(this.button_word, "button_word");
             this.button_word.Name = "button_word";
             this.button_word.UseVisualStyleBackColor = true;
+            this.button_word.Click += new System.EventHandler(this.button_word_Click);
             // 
             // dgv_alphabet
             // 

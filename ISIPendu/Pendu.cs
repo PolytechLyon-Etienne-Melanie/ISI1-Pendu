@@ -28,8 +28,8 @@ namespace ISIPendu
         {
             InitializeComponent();
             initComposants();
-            selectionnerFichier();
-            //DicoAuto();
+            //selectionnerFichier();
+            dicoAuto();
             onGame = true;
             currentTry = 0;
             initMot();
@@ -52,7 +52,7 @@ namespace ISIPendu
             }
         }
 
-        private void selectionnerFichier()
+       private void selectionnerFichier()
          {
            OpenFileDialog ofd = new OpenFileDialog();
           // on initalise la boîte de dialogue
@@ -76,9 +76,15 @@ namespace ISIPendu
             }
         }
 
-        private void DicoAuto()
+        private void dicoAuto()
         {
-            string[] dictionnaire = File.ReadAllLines("C:/Users/Mel/Documents/Cours/3A info/ISI/ISI1-Pendu/ISIPendu/Dico.txt");
+            string[] dico = File.ReadAllLines("C:/Users/Mel/Documents/Cours/3A info/ISI/ISI1-Pendu/ISIPendu/Dico.txt");
+            dictionnaire = dico.ToList();
+            Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
+            info("Mot secret chargé, choisissez votre première lettre.");
+           
+            //rafraichirSecret();
+            this.button_word.Enabled = true;
         }
 
         private void selectionnerMot()
@@ -201,7 +207,7 @@ namespace ISIPendu
             MessageBox.Show("Félicitaion vous avez gagné !");
             this.button_generate.Enabled = true;
             this.button_surrend.Enabled = false;
-            this.button_word.Enabled = false;
+            this.button_word.Enabled = true;
         }
 
         private void onLoose()
@@ -210,7 +216,7 @@ namespace ISIPendu
             MessageBox.Show("Dommage, c'est perdu. \nLe mot était "+Mot_secret+".");
             this.button_generate.Enabled = true;
             this.button_surrend.Enabled = false;
-            this.button_word.Enabled = false;
+            this.button_word.Enabled = true;
         }
 
         private void reinit()
@@ -261,6 +267,12 @@ namespace ISIPendu
         private void updateImage()
         {
             this.picture_Pendu.Image = images[currentTry];
+        }
+
+        private void button_word_Click(object sender, EventArgs e)
+        {
+            NewWord w = new NewWord();
+            w.ShowDialog();
         }    
 
     }

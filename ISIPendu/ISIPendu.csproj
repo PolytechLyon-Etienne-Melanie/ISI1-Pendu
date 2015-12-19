@@ -46,6 +46,12 @@
   <ItemGroup>
     <Compile Include="Letter.cs" />
     <Compile Include="MysteryWord.cs" />
+    <Compile Include="NewWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewWord.Designer.cs">
+      <DependentUpon>NewWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pendu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="ProgramPendu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="NewWord.resx">
+      <DependentUpon>NewWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pendu.fr.resx">
       <DependentUpon>Pendu.cs</DependentUpon>
     </EmbeddedResource>
