@@ -50,10 +50,12 @@
             // labelTitle
             // 
             resources.ApplyResources(this.labelTitle, "labelTitle");
+            this.labelTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelTitle.Name = "labelTitle";
             // 
             // groupBox_letters
             // 
+            this.groupBox_letters.BackColor = System.Drawing.Color.Transparent;
             this.groupBox_letters.Controls.Add(this.label_used_letters);
             resources.ApplyResources(this.groupBox_letters, "groupBox_letters");
             this.groupBox_letters.Name = "groupBox_letters";
@@ -61,12 +63,14 @@
             // 
             // label_used_letters
             // 
+            this.label_used_letters.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label_used_letters, "label_used_letters");
             this.label_used_letters.Name = "label_used_letters";
             this.label_used_letters.UseMnemonic = false;
             // 
             // groupBox_menu
             // 
+            this.groupBox_menu.BackColor = System.Drawing.Color.Transparent;
             this.groupBox_menu.Controls.Add(this.button_quit);
             this.groupBox_menu.Controls.Add(this.button_surrend);
             this.groupBox_menu.Controls.Add(this.button_generate);
@@ -121,22 +125,27 @@
             // 
             // tsplb_information
             // 
+            this.tsplb_information.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.tsplb_information, "tsplb_information");
             this.tsplb_information.Name = "tsplb_information";
             // 
             // label_letters
             // 
+            this.label_letters.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label_letters, "label_letters");
             this.label_letters.Name = "label_letters";
             // 
             // picture_Pendu
             // 
+            this.picture_Pendu.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.picture_Pendu, "picture_Pendu");
             this.picture_Pendu.Name = "picture_Pendu";
             this.picture_Pendu.TabStop = false;
             // 
             // Pendu
             // 
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::ISIPendu.Properties.Resources.arrière_plan;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.picture_Pendu);
             this.Controls.Add(this.label_letters);

@@ -394,13 +394,13 @@
     <value>3</value>
   </data>
   <data name="dgv_alphabet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 58</value>
+    <value>12, 81</value>
   </data>
   <data name="dgv_alphabet.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="dgv_alphabet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 98</value>
+    <value>459, 56</value>
   </data>
   <data name="dgv_alphabet.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -418,7 +418,7 @@
     <value>3</value>
   </data>
   <data name="tsplb_information.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 159</value>
+    <value>12, 154</value>
   </data>
   <data name="tsplb_information.Size" type="System.Drawing.Size, System.Drawing">
     <value>459, 20</value>
@@ -448,7 +448,7 @@
     <value>Microsoft Sans Serif, 30pt</value>
   </data>
   <data name="label_letters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 190</value>
+    <value>12, 184</value>
   </data>
   <data name="label_letters.Size" type="System.Drawing.Size, System.Drawing">
     <value>459, 53</value>

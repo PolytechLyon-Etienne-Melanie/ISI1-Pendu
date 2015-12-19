@@ -29,6 +29,7 @@ namespace ISIPendu
             InitializeComponent();
             initComposants();
             selectionnerFichier();
+            //DicoAuto();
             onGame = true;
             currentTry = 0;
             initMot();
@@ -73,6 +74,11 @@ namespace ISIPendu
                 //rafraichirSecret();
                 this.button_word.Enabled = true;
             }
+        }
+
+        private void DicoAuto()
+        {
+            string[] dictionnaire = File.ReadAllLines("C:/Users/Mel/Documents/Cours/3A info/ISI/ISI1-Pendu/ISIPendu/Dico.txt");
         }
 
         private void selectionnerMot()
@@ -255,7 +261,7 @@ namespace ISIPendu
         private void updateImage()
         {
             this.picture_Pendu.Image = images[currentTry];
-        }
+        }    
 
     }
 }
