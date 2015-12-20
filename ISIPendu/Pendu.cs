@@ -48,7 +48,7 @@ namespace ISIPendu
             images = new Image[n];
             for(int i = 0; i < n; i++)
             {
-                images[i] = Image.FromFile("images/pendu_"+i+".png");
+                images[i] = Image.FromFile(@"../../images/pendu_" + i + ".png");
             }
         }
 
@@ -78,7 +78,7 @@ namespace ISIPendu
 
         private void dicoAuto()
         {
-            string[] dico = File.ReadAllLines("C:/Users/Mel/Documents/Cours/3A info/ISI/ISI1-Pendu/ISIPendu/Dico.txt");
+            string[] dico = File.ReadAllLines(@"../../Dico.txt");
             dictionnaire = dico.ToList();
             Mot_secret = dictionnaire[new Random().Next(dictionnaire.Count)];
             info("Mot secret chargé, choisissez votre première lettre.");
